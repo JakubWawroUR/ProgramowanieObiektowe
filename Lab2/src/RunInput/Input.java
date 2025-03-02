@@ -7,4 +7,8 @@ public class Input {
     public int InputInt(){
         return scanner.nextInt();
     }
+    public boolean InputBool(){
+        return scanner.nextBoolean();
+    }
+
 }

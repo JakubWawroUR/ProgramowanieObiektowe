@@ -24,9 +24,31 @@ public class Run {
                         ++i;
                         SumaPuntkow =SumaPuntkow+ punkty;
                     }
+                    wynik = Tasks.Losowanie(n,SumaPuntkow);
+                    System.out.println("Średnia ocen wynosi: " + wynik);
+                }break;
+            case 2:
+                int n = 0;
+                int SumaDodatnich = 0;
+                int SumaUjemnych = 0;
+                int Liczba;
+                int Dodatnie = 0;
+                int Ujemne = 0;
+                while(n>10){
+                    Liczba = input.InputInt();
+                    if(Liczba>=0){
+                        Dodatnie++;
+                        SumaDodatnich = SumaDodatnich + Liczba;
+                    }else {
+                        SumaUjemnych = SumaUjemnych + Liczba;
+                        Ujemne++;
+                    }
+                    n++;
                 }
-                wynik = Tasks.Losowanie(n,SumaPuntkow);
-                System.out.println("Średnia ocen wynosi: " + wynik);
+                wynik = Tasks.Suma(SumaDodatnich,SumaUjemnych,Dodatnie,Ujemne);
+                System.out.println(wynik);
+                break;
+                }
         }
     }
 

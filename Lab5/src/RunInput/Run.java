@@ -1,5 +1,7 @@
 package RunInput;
 
+import Biologia.Gatunek;
+import Biologia.Gatunki;
 import Budynek.Budynki;
 import FiguryGeometryczne.*;
 
@@ -11,6 +13,7 @@ public class Run {
 
         switch (wybor) {
             case 1:
+                wybor = input.InputInt();
                 switch (wybor) {
                     case 1:
                         System.out.println("Podaj promień koła:");
@@ -59,10 +62,10 @@ public class Run {
                 }
             case 2:
                 Budynki.Budynki();
-
+                break;
+            case 3:
+                Gatunki.Gatunki();
                 break;
         }
-
-
     }
 }

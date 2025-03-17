@@ -14,7 +14,7 @@ public class Budynki {
                 new Budynek("Budynek 3", 1992, 3),
                 new Budynek("Budynek 4", 1995, 7),
                 new Budynek("Budynek 5", 1998, 8),
-                new Budynek("Budynek 6", 1999, 9)
+                new Budynek("Budynek 6", 1969, 9)
         ));
         System.out.println("Wybierz budynek ktory chcesz wyświetlić od 0-5");
         int wybor = input.InputInt();

@@ -1,4 +1,6 @@
-class Prostokat  {
+package zad1;
+
+public class Prostokat  {
     double wys=0, szer=0;
 
     Prostokat(double wys,double szer){

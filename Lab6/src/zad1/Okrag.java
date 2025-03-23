@@ -1,3 +1,5 @@
+package zad1;
+
 public class Okrag extends Punkt {
     double promien;
     Punkt punkt;

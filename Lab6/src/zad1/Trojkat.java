@@ -1,4 +1,6 @@
-class Trojkat
+package zad1;
+
+public class Trojkat
 {
     double wys=0, podst=0;
 

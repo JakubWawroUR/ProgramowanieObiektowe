@@ -1,3 +1,5 @@
+package zad1;
+
 public class Punkt {
     public double x,y;
 

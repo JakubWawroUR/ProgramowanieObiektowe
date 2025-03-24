@@ -35,7 +35,7 @@ public class Main {
         String idWyp = scanner.nextLine();
         for(Pojazd p : pojazdy){
             if(p.getId().equals(idWyp)&&p.isCzyDostepny()){
-                System.out.println("Na ile godzin chcesz wypozyczyc pojazd: ");
+                System.out.println("Na ile godzin chcesz wypozycszyc pojazd: ");
                 int godz = scanner.nextInt();
                 p.wypozycz();
                 System.out.println("Koszt wypozyczenia "+ p.obliczKoszt(godz)+"zł");

@@ -23,7 +23,7 @@ public class Okrag extends Punkt {
         if((x- test.x)*(x-test.x)+(y-test.y)*(y-test.y) <= promien*promien){
             System.out.println("znajduje sie wewnatrz");
         }else{
-            System.out.println("Nie znajduje sie");
+            System.out.println("Nie znajduje siee");
         }
     }
 }

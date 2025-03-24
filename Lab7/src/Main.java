@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
+
     Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         List<Pojazd> pojazdy = new ArrayList<>();
@@ -26,6 +27,7 @@ public class Main {
         switch (wybor){
             case 1: viewPojazdy(); break;
             case 2: wypozyczycPojazd();break;
+            case 3: naladujPojazd();break;
         }
     }
     private void wypozyczycPojazd(List<Pojazd> pojazdy){
@@ -45,6 +47,16 @@ public class Main {
         for(Pojazd p : pojazdy){
             System.out.println((p.getId() + " "+ p.getModel()+" - "+(p.isCzyDostepny()? "Dostepny" : "Niedostepny")));
 
+        }
+    }
+    private void naladujPojazd(List<Pojazd> pojazdy){
+        System.out.println("Podaj ID pojazdu do naładaowania: ");
+        String idLadu = scanner.nextLine();
+        for(Pojazd p : pojazdy){
+            if(p.getId().equals(idLadu)&& p instanceof  Elektryczny){
+                ((Elektryczny) p).naladuj();
+                System.out.println("Pojazd naładowany do 100%");
+            }
         }
     }
 }

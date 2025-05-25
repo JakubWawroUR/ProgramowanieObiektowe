@@ -17,6 +17,7 @@ public class SwingRadioButtonDemo extends JFrame {
     // ButtonGroup musi być zainicjowany w kodzie
     private ButtonGroup osButtonGroup;
 
+
     // Ścieżki do obrazków (bez zmian, takie jak podałeś)
     private static final String LINUX_ICON_PATH = "/images/icons8-linux-100.png";
     private static final String WINDOWS_ICON_PATH = "/images/icons8-windows-os-100.png";

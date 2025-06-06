@@ -1,7 +1,8 @@
 package RunInput;
-import Tasks.KartaDan;
-import Tasks.ZarzadzanieUzytkownikami;
-import Tasks.ZliczanieSlow;
+
+
+import Tasks.PizzaZamowienie;
+import Tasks.SymulatorSwiatel;
 
 public class Run {
 
@@ -18,14 +19,11 @@ public class Run {
         int wybor = input.InputInt();
         switch (wybor){
             case 1:
-                ZliczanieSlow zliczanieSlow = new ZliczanieSlow();
-                zliczanieSlow.ZliczSlowa();
+                SymulatorSwiatel symulatorSwiatel = new SymulatorSwiatel();
+                symulatorSwiatel.uruchom();
             case 2:
-                ZarzadzanieUzytkownikami zarzadzanieUzytkownikami = new ZarzadzanieUzytkownikami();
-                zarzadzanieUzytkownikami.uruchom();
-            case 3:
-                KartaDan kartaDan = new KartaDan();
-                kartaDan.uruchom();
+                PizzaZamowienie pizzaZamowienie = new PizzaZamowienie();
+                pizzaZamowienie.uruchom();
             default: System.out.println("Nie ma takiego zadania");
 
         }
